@@ -1,4 +1,5 @@
 import uniteIcon from '../assets/unite-logo.svg'
+import { NavLink } from './nav-link'
 
 export function Header() {
     return (
@@ -6,8 +7,8 @@ export function Header() {
             <img src={uniteIcon} alt="NLW Unite Logo" />
 
             <nav className='flex items-center gap-5'>
-                <a href="" className='font-medium text-sm text-zinc-400'>Eventos</a>
-                <a href="" className='font-medium text-sm'>Participantes</a>
+                <NavLink href='/eventos'>Eventos</NavLink>
+                <NavLink href='/participantes'>Participantes</NavLink>
             </nav>
         </div>
     )
